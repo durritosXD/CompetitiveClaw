@@ -1,0 +1,31 @@
+{
+  "name": "CompetitorClaw Workspace",
+  "version": "1.0.0",
+  "default_channel": "telegram",
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "bot_token": "${TELEGRAM_BOT_TOKEN}",
+      "chat_id": "${TELEGRAM_CHAT_ID}"
+    },
+    "whatsapp": {
+      "enabled": false,
+      "provider": "twilio"
+    }
+  },
+  "runtime": {
+    "memory_path": "./memory",
+    "skills_path": "./skills",
+    "agents_path": "./agents"
+  },
+  "skill_gating": {
+    "exec": {
+      "allowed": true,
+      "reason": "Required for data parsing and JSON manipulation"
+    },
+    "browser": {
+      "allowed": true,
+      "reason": "Required for monitoring competitor websites and local listings"
+    }
+  }
+}
