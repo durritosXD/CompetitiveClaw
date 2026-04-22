@@ -1,4 +1,4 @@
-$key = "AIzaSyBzjtuu2a18RM2aRvR1_mSTy3-1ajtsZmk"
+$key = "API_KEY_PLACEHOLDER"
 $uri = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=$key"
 $body = '{"contents":[{"parts":[{"text":"Say hello in one word"}]}]}'
 
